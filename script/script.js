@@ -2,7 +2,7 @@ const fetchData = async () => {
     try {
         let response = await fetch('https://fakestoreapi.com/products', { method: "GET" });
         if (!response.ok) {
-            console.log('Network response was not ok');
+            console.log('Error fetching api');
         }
         let data = await response.json();
         const container = document.getElementById('product-container');
