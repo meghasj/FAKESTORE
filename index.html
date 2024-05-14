@@ -28,13 +28,76 @@
         border-radius: 5px;
     }
     .card:hover{
-        box-shadow: 0px 2px 2px 4px rgb(128, 125, 125);
-        transform: scale(1.1);
+        box-shadow: 0px 1px 1px 2px rgb(224, 223, 223);
+        transform: scaleX(1.1);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+   
+    .navbar {
+      background-color: #232f3e; 
+      color: #ffffff; 
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 20px;
+    }
+    
+    .nav {
+      list-style-type: none;
+      display: flex;
+    }
+    
+    .nav-item {
+      margin-right: 20px;
+    }
+    
+    .nav-link {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 10px 15px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .nav-link:hover {
+      background-color: #ff9900; 
     }
 </style>
 <script src="/script/script.js"></script>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="container">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Amazon Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Today's Deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Electronics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" class="">Fashion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Prime</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customer Service</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
 <div class="container" id="product-container"></div>
 
 </body>
